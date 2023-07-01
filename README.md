@@ -36,15 +36,3 @@ Si deseas contribuir al proyecto, sigue los siguientes pasos:
   
 ## Web site del proyecto 🕸️
 
-
-## Links
-https://de.web.img2.acsta.net/r_654_368/img/3f/b7/3fb7d376ddaecafa59aba1df5fb459ff.jpg
-https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/25-cosas-que-no-sabias-de-the-big-bang-theory/58975014-1-esl-ES/25-cosas-que-no-sabias-de-The-Big-Bang-Theory.jpg?crop=1xw:0.8888888888888888xh;center,top&resize=1200:*
-https://fr.web.img5.acsta.net/pictures/18/11/06/15/36/0408812.jpg
-https://fondosmil.com/fondo/8516.jpg
-https://static.vecteezy.com/system/resources/previews/003/776/244/non_2x/astrology-horizontal-star-universe-background-vector.jpg
-https://w.forfun.com/fetch/a2/a2eec9ef66f0b2a70cb8fcd36f104495.jpeg
-
-
-
-
