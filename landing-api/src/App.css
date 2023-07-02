@@ -13,6 +13,7 @@
   padding: 1%;
 }
 
+/* Estilo para el navbar*/
 .navbar {
   background-color: transparent !important;
   width: 100%;
@@ -34,20 +35,51 @@
   text-decoration: none;
 }
 
+/* Estilo para el menu dropdown */
+.dropdown-menu {
+  background-color:rgba(10, 10, 10, 0.47) !important;
+}
+
+.dropdown-menu .dropdown-item {
+  background-color: transparent !important;
+  color: rgba(255, 252, 50, 0.995) !important;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:active {
+  background-color: transparent !important;
+  color: rgba(236, 240, 12, 0.847) !important;
+  font-weight: bolder;
+  text-shadow: 5px 3px 4px rgba(255, 255, 255, 0.888);
+}
+
+
+/* Estilo para el Navbar movil*/
+.navbar-toggler-icon,
+.navbar-toggler,
+.collapsed {
+  color: rgb(252, 252, 252) !important;
+}
+
+
 /* Estilo para el Main*/
 .main {
   margin-top: 0%;
   padding: 10% 1% 1% 1%;
   background-image: url("./img/img_05.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;
 }
 
 .texto-presentacion {
   text-shadow: 2px 2px 3px rgb(0, 0, 0);
-  background-color: #0000008f;
+  background-color: #9791913d;
   border-radius: 1em;
-  color: #95ede7f7;
+  color: #a4965271;
+  padding: 1%;
+}
+.texto-presentacion:hover {
+  background-color: #000000a5;
+  color: #fea562;
   padding: 1%;
 }
 
@@ -58,6 +90,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 9;
   bottom: 0;
   right: 0;
   padding: 1%;
@@ -87,45 +120,25 @@
 }
 
 
-/* Estilo para las columnas del main*/
-.columns {
-  display: flex;
-  flex-wrap: wrap;
+/* Estilo para el carousel*/
+h2 {
+  color: #fea562 !important;
+  text-align: center;
+  background-color: #00000022;
+  padding: 1%;
+}
+h2:hover {
+  text-shadow: 5px 3px 4px rgba(255, 253, 253, 0.635);
+  font-weight: bolder;
 }
 
-.column {
-  flex-basis: 50%;
-  max-width: 50%;
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.column img {
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
+.carousel {
+  box-shadow: 10px 20px 40px rgba(245, 239, 239, 0.588);
+  border-radius: 1.5em;
+  height: 800px;
   width: 100%;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.column span {
-  color: orange;
-  font-weight: bold;
-  font-size: 1em;
-  transition: font-size 0.3s; 
-}
-
-@media (max-width: 768px) {
-  .column span {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-width: 480px) {
-  .column span {
-    font-size: 0.6em;
-  }
+  position: relative;
+  z-index: 1;
 }
 
 

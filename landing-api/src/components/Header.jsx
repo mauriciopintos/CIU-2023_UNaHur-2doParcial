@@ -10,7 +10,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const Header = ({titulo}) => {
     return (
         <div className='header'>
-            <Navbar className='navbar' expand="lg" variant="light" bg="transparent">
+            <Navbar className='navbar' expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#">{titulo}</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" variant="light" />
@@ -21,10 +21,10 @@ const Header = ({titulo}) => {
                         <Nav.Link className="link" href="#section2">Seccion2</Nav.Link>
                         <Nav.Link className="link" href="#section3">Seccion3</Nav.Link>
                         <NavDropdown className="link" title="Sectores" id="navbarScrollingDropdown">
-                        <NavDropdown.Item className="link" href="#opciones">Lista</NavDropdown.Item>
-                        <NavDropdown.Item className="link" href="#opcion1">Opcion1</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item className="link" href="#opcion2">Opcion2</NavDropdown.Item>
+                            <NavDropdown.Item href="#opcion1">Opcion1</NavDropdown.Item>
+                            <NavDropdown.Item href="#opcion2">Opcion2</NavDropdown.Item>
+                            {/* <NavDropdown.Divider /> */}
+                            <NavDropdown.Item href="#opcion3">Opcion3</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Form className="d-flex">

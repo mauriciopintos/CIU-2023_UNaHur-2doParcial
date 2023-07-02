@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React, { Fragment } from 'react';
 import { useState } from 'react';
 
@@ -7,12 +9,15 @@ const Main = () => {
     // eslint-disable-next-line no-unused-vars
     const [elementos, guardarElementos] = useState(
         [
-        { id: 1, descripcion: "DESCRIPCION", src:'https://de.web.img2.acsta.net/r_654_368/img/3f/b7/3fb7d376ddaecafa59aba1df5fb459ff.jpg' },
-        { id: 2, descripcion: "DESCRIPCION", src:'https://fondosmil.com/fondo/8516.jpg' },
-        { id: 3, descripcion: "DESCRIPCION", src:'https://fr.web.img5.acsta.net/pictures/18/11/06/15/36/0408812.jpg' },
-        { id: 4, descripcion: "DESCRIPCION", src:'https://fondosmil.com/fondo/8516.jpg' },
-        { id: 5, descripcion: "DESCRIPCION", src:'https://static.vecteezy.com/system/resources/previews/003/776/244/non_2x/astrology-horizontal-star-universe-background-vector.jpg' },
-        { id: 6, descripcion: "DESCRIPCION", src:'https://w.forfun.com/fetch/a2/a2eec9ef66f0b2a70cb8fcd36f104495.jpeg' }
+        { id: 1, src:'https://i.blogs.es/4600c9/the-big-bang-theory/1366_2000.jpg' },
+        { id: 2, src:'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi12TimDCLddUclaIPg6OX4NNlWlXc-5p-bW97U2ALlPUiypNrvRJCAjeMXH5_d7Wq33kBBytXnejvB3GElCyWoM0LfvGOd0I1ElJ6xXctsdnyeP_B0ntVOYl8OepMRQ_lhYDTH5LTgJspUkI2HaZCSDdFuIAL3yvmpS9LIWoU4p51F0YdcHue39wdz/s800/BLOG.jpg' },
+        { id: 3, src:'https://s1.abcstatics.com/media/play/2019/05/15/tbbt-final-kYN--1248x698@abc.png' },
+        { id: 4, src:'https://www.viveusa.mx/resizer/nM6c7MvWEAo7G45BoQwsVrSymBM=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/23C5IID47FGILDTMJNKCLMOIDE.jpg' },
+        { id: 5, src:'https://assets.b9.com.br/wp-content/uploads/2018/08/111252_wb_0154b-1280x720.jpg' },
+        { id: 6, src:'https://s3.abcstatics.com/media/play/2019/08/12/the_big_bang_theory1-kAZH--620x349@abc.jpg' },
+        { id: 7, src:'https://static.sky.it/editorialimages/2d1f1886ed800b3d44d038fb622bc45513037676/skytg24/it/spettacolo/serie-tv/2023/04/13/serie-tv-universo-the-big-bang-theory/the-big-bang-theory-webphoto.jpg' },
+        { id: 8, src:'https://www.looper.com/img/gallery/the-big-bang-theorys-biggest-problem-is-one-that-most-people-completely-overlook/intro-1679238766.jpg' },
+        { id: 9, src:'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2018/08/Big-Bang-Theory-1.jpg?fit=1920%2C1080&quality=50&strip=all&ssl=1' }
         ]
     );
 
@@ -30,6 +35,7 @@ const Main = () => {
                     <p>¡Prepárate para expandir tus límites y descubrir las maravillas de <strong>TBBT</strong> y la <strong>NASA</strong> juntas en nuestra landing page!</p>
                 </div>
                 <br />
+
                 <div className='nasa'>
                     <a href="https://api.nasa.gov/" target="_blank" rel="noreferrer">
                         <img 
@@ -43,15 +49,32 @@ const Main = () => {
                     </div>
                 </div>
 
-                <h2>Listado de elementos</h2>
-                <div className="columns">
-                    {elementos.map((elemento) => (
-                        <div key={elemento.id} className="column">
-                            <img src={elemento.src} alt={elemento.descripcion} />
-                            <span>{elemento.id} | {elemento.descripcion}</span>
-                        </div>
-                    ))}
+                <h2>Una Seccion A</h2>
+                <div>
+
                 </div>
+
+                <h2>Una Seccion B</h2>
+                <div>
+                    
+                </div>
+
+                <h2>Una Seccion C</h2>
+                <div>
+                    
+                </div>
+                
+                <h2>Galeria de imagenes TBBT</h2>
+                <div className='carousel-main'>
+                    <Carousel showThumbs={false} showStatus={false} selectedItem={0}>
+                        {elementos.map((elemento) => (
+                            <div key={elemento.id}>
+                                <img src={elemento.src} className="d-block w-100" alt={`Imagen ${elemento.id}`} />
+                            </div>
+                        ))}
+                    </Carousel>
+                </div>
+
             </div>
         </Fragment>
     );

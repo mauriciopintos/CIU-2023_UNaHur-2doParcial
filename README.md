@@ -23,6 +23,8 @@ Se utilizaron diferentes modulos de node.js para crear el proyecto, para correlo
         cd CIU-2023_UNaHur-2doParcial/landing-api  
         npm install react-bootstrap bootstrap  
         npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons  
+        npm install react-responsive-carousel  
+        npm install axios  
         npm start  
 
 
