@@ -10,7 +10,6 @@ import { Row, Col } from 'react-bootstrap';
 
 const MarteApi = () => {
     const keyApi = 'La3uIqB4TSmPoVoXPq1qVaEljzMV6EjYs3YCR8Bs';
-    // console.log( keyApi)
 
     // Declaro las constantes para las fotos de marte
     const [sol, setSol] = useState('');
@@ -51,7 +50,7 @@ const MarteApi = () => {
       };
 
     return (
-        <div className='busca-marte'>
+        <div className='api busca-api'>
             <Row>
                 <Col sm={6}>
                     <Form onSubmit={handleSubmit}>
@@ -86,14 +85,13 @@ const MarteApi = () => {
                                 
                                 </Form.Select>
                             </Form.Group>
-                            <Button type="submit">Buscar</Button>
+                            <Button variant="warning" type="submit">Buscar</Button>
                         </fieldset>
                     </Form>
                 </Col>
-                <br />
                 <Col sm={6}>
                     {/* Muestra los resultados de la búsqueda */}
-                    <div className='carousel-marte'>
+                    <div className='carousel-api'>
                             <Carousel showThumbs={false} showStatus={false} selectedItem={0}>
                                 {fotos.map((foto) => (
                                     <div key={foto.id}>

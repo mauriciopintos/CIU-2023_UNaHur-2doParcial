@@ -56,10 +56,13 @@
 
 
 /* Estilo para el Navbar movil*/
-.navbar-toggler-icon,
 .navbar-toggler,
-.collapsed {
-  color: rgb(252, 252, 252) !important;
+.navbar-toggler .collapsed {
+  border-color: rgb(237, 186, 97) !important;
+  border-width: 2.5px !important;
+}
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(237, 186, 97)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
 
 
@@ -73,15 +76,18 @@
 
 .texto-presentacion {
   text-shadow: 2px 2px 3px rgb(0, 0, 0);
-  background-color: #9791913d;
   border-radius: 1em;
-  color: #a4965271;
-  padding: 1%;
-}
-.texto-presentacion:hover {
   background-color: #000000a5;
   color: #fea562;
   padding: 1%;
+}
+
+h1{
+  text-align: center;
+}
+
+h1:hover {
+  font-weight: bold;
 }
 
 /* Estilo para el logo de enlace a la API de la NASA*/
@@ -130,7 +136,7 @@ h2 {
 }
 
 h2:hover {
-  text-shadow: 5px 3px 4px rgba(255, 253, 253, 0.635);
+  text-shadow: 5px 3px 4px rgba(255, 253, 253, 0.5);
   font-weight: bolder;
 }
 
@@ -172,15 +178,36 @@ h2:hover {
 }
 
 
+/*** ESTILOS PARA LOS COMPONENTES DE LA API ***/
 
-/* Estilos para MarteApi*/
-.busca-marte {
+/* Estilos para formularios*/
+.api{
   padding: 0 5em 0 5em;
-  color: blueviolet;
   background-color: #9791913d;
+  font-weight: bolder;
 }
 
-.busca-marte form{
+.busca-api {
+  color: #f2f516;
+}
+
+.busca-api form{
   max-width: 30em;
   min-width: 10em;
+}
+
+/* Estilo para la imagen del día*/
+.dia-api {
+  text-align: justify;
+  color: #60f516;
+  background-color: #97919167;
+}
+
+.dia-api p{
+  line-height: 2;
+  font-style: italic;
+}
+.dia-api img {
+  border-radius: 1em;
+  box-shadow: 0 010px 10px 10px rgba(255, 255, 255, 0.437);
 }

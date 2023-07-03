@@ -17,25 +17,26 @@ const Header = ({titulo}) => {
                     <Navbar.Collapse id="navbarScroll">
                     <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                         <Nav.Link className="link" href="#inicio">Inicio</Nav.Link>
-                        <Nav.Link className="link" href="#section1">Seccion1</Nav.Link>
-                        <Nav.Link className="link" href="#section2">Seccion2</Nav.Link>
-                        <Nav.Link className="link" href="#section3">Seccion3</Nav.Link>
+                        <Nav.Link className="link" href="#presentacion">Presentacion</Nav.Link>
+                        <Nav.Link className="link" href="#galeria">Galeria-TBBT</Nav.Link>
                         <NavDropdown className="link" title="Sectores" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#opcion1">Opcion1</NavDropdown.Item>
-                            <NavDropdown.Item href="#opcion2">Opcion2</NavDropdown.Item>
+                            <NavDropdown.Item href="#seccion-a">Fotos de Marte</NavDropdown.Item>
+                            <NavDropdown.Item href="#seccion-b">Imagen del día</NavDropdown.Item>
                             {/* <NavDropdown.Divider /> */}
-                            <NavDropdown.Item href="#opcion3">Opcion3</NavDropdown.Item>
+                            <NavDropdown.Item href="#seccion-c">Opcion3</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Form className="d-flex">
+                    <Form className="d-flex" action="https://www.google.com/search" method="GET" target="_blank">
                         <Form.Control
-                        type="search"
-                        placeholder="Ingrese busqueda..."
-                        className="me-2"
-                        aria-label="Search"
+                            type="search"
+                            placeholder="Busca en Google..."
+                            className="me-2"
+                            aria-label="Search"
+                            name="q"
                         />
-                        <Button variant="outline-warning">Buscar</Button>
+                        <Button variant="outline-warning" type="submit">Buscar</Button>
                     </Form>
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
