@@ -7,6 +7,7 @@
   background-size: cover;
   background-position: center;
   position: fixed;
+  z-index: 9;
   top: 0;
   left: 0;
   width: 100%;
@@ -127,6 +128,7 @@ h2 {
   background-color: #00000022;
   padding: 1%;
 }
+
 h2:hover {
   text-shadow: 5px 3px 4px rgba(255, 253, 253, 0.635);
   font-weight: bolder;
@@ -134,8 +136,7 @@ h2:hover {
 
 .carousel {
   box-shadow: 10px 20px 40px rgba(245, 239, 239, 0.588);
-  border-radius: 1.5em;
-  height: 800px;
+  border-radius: 1em;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -168,4 +169,18 @@ h2:hover {
 .icono:focus {
   color: #e9e197;
   transform: scale(1.7);
+}
+
+
+
+/* Estilos para MarteApi*/
+.busca-marte {
+  padding: 0 5em 0 5em;
+  color: blueviolet;
+  background-color: #9791913d;
+}
+
+.busca-marte form{
+  max-width: 30em;
+  min-width: 10em;
 }

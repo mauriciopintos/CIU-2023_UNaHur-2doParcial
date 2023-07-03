@@ -3,11 +3,13 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import React, { Fragment } from 'react';
 import { useState } from 'react';
+import MarteApi from './MarteApi';
+// import axios from 'axios';
+
 
 const Main = () => {
-    // Creamos nuestrlista de elementos mediante un hook
-    // eslint-disable-next-line no-unused-vars
-    const [elementos, guardarElementos] = useState(
+    // Creamos nuestrlista de elementos mediante un hook para exponer en un carousel
+    const [elementos] = useState(
         [
         { id: 1, src:'https://i.blogs.es/4600c9/the-big-bang-theory/1366_2000.jpg' },
         { id: 2, src:'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi12TimDCLddUclaIPg6OX4NNlWlXc-5p-bW97U2ALlPUiypNrvRJCAjeMXH5_d7Wq33kBBytXnejvB3GElCyWoM0LfvGOd0I1ElJ6xXctsdnyeP_B0ntVOYl8OepMRQ_lhYDTH5LTgJspUkI2HaZCSDdFuIAL3yvmpS9LIWoU4p51F0YdcHue39wdz/s800/BLOG.jpg' },
@@ -49,9 +51,9 @@ const Main = () => {
                     </div>
                 </div>
 
-                <h2>Una Seccion A</h2>
+                <h2>Buscador de fotos de Marte</h2>
                 <div>
-
+                    <MarteApi/>
                 </div>
 
                 <h2>Una Seccion B</h2>
