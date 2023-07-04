@@ -1,3 +1,11 @@
+/* Estilos generales*/
+h1, h2, h2, h4 {
+  font-size: calc(70% + 1vw);
+}
+
+p {
+  font-size: calc(35% + 0.8vw);
+}
 /* Estilo para el Header*/
 .header {
   display: flex;
@@ -75,11 +83,17 @@
 }
 
 .texto-presentacion {
-  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  text-shadow: 2px 2px 3px rgb(86, 84, 84);
   border-radius: 1em;
-  background-color: #000000a5;
+  background-color: #000000e6;
   color: #fea562;
   padding: 1%;
+  position: fixed;
+  z-index: 10;
+  top: 20%;
+  left: 1%;
+  width: 98%;
+  padding-inline: 1em;
 }
 
 h1{
@@ -97,7 +111,7 @@ h1:hover {
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 9;
+  z-index: 8;
   bottom: 0;
   right: 0;
   padding: 1%;
@@ -121,24 +135,27 @@ h1:hover {
   border-radius: 10px 0 10px 0;
   padding-left: 3%;
   padding-right: 3%;
-  color: rgb(159, 236, 37);
-  background-color: rgba(128, 128, 128, 0.648);
+  color: rgb(174, 251, 49);
   font-size: 70%;
 }
 
 
 /* Estilo para el carousel*/
-h2 {
-  color: #fea562 !important;
+section {
+  color: #fb8e3a !important;
   text-align: center;
-  background-color: #00000022;
-  padding: 1%;
+  background-color: #00000059;
+  padding: 1% 0 1% 0;
+  margin: 1% 0% 0% 0%;
+  border-radius: 0.5em;
 }
 
 h2:hover {
   text-shadow: 5px 3px 4px rgba(255, 253, 253, 0.5);
   font-weight: bolder;
 }
+
+
 
 .carousel {
   box-shadow: 10px 20px 40px rgba(245, 239, 239, 0.588);
@@ -147,6 +164,34 @@ h2:hover {
   position: relative;
   z-index: 1;
 }
+
+/* Estilo para la tabla*/
+.table-container th {
+  color: rgb(218, 201, 201) !important;
+  background-color: #244190 !important;
+  text-align: center;
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+.center-table {
+  align-items: center;
+}
+
+/* Estilo para el video*/
+.video-container {
+  max-width: 100%;
+  max-height: auto;
+  color: #f6ee09;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  min-width: 10em;
+}
+
 
 
 /* Estilo para el Footer*/
@@ -178,17 +223,14 @@ h2:hover {
 }
 
 
+
 /*** ESTILOS PARA LOS COMPONENTES DE LA API ***/
 
 /* Estilos para formularios*/
 .api{
   padding: 0 5em 0 5em;
-  background-color: #9791913d;
+  color: #f6ee09;
   font-weight: bolder;
-}
-
-.busca-api {
-  color: #f2f516;
 }
 
 .busca-api form{
@@ -199,13 +241,11 @@ h2:hover {
 /* Estilo para la imagen del día*/
 .dia-api {
   text-align: justify;
-  color: #60f516;
-  background-color: #97919167;
 }
 
 .dia-api p{
-  line-height: 2;
   font-style: italic;
+  font-weight: normal;
 }
 .dia-api img {
   border-radius: 1em;
