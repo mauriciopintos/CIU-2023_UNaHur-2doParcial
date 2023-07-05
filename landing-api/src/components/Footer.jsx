@@ -14,7 +14,7 @@ const Footer = ({redsocial}) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                        <FontAwesomeIcon icon={faFacebook} className="icono"/>
+                        <FontAwesomeIcon icon={faFacebook} className="icono" size="2x"/>
                         </a>
                     </li>
                     <li className="list-inline-item">
@@ -23,7 +23,7 @@ const Footer = ({redsocial}) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                        <FontAwesomeIcon icon={faLinkedin} className="icono"/>
+                        <FontAwesomeIcon icon={faLinkedin} className="icono" size="2x"/>
                         </a>
                     </li>
                     <li className="list-inline-item">
@@ -32,7 +32,7 @@ const Footer = ({redsocial}) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                        <FontAwesomeIcon icon={faTwitter} className="icono"/>
+                        <FontAwesomeIcon icon={faTwitter} className="icono" size="2x"/>
                         </a>
                     </li>
                     </ul>

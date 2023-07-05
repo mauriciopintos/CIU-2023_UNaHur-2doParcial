@@ -18,15 +18,16 @@ const Header = ({titulo}) => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                             <Nav.Link className="link" href="#inicio">Inicio</Nav.Link>
-                            <Nav.Link className="link" href="#presentacion">Presentacion</Nav.Link>
+                            <Presentacion/>
                             <Nav.Link className="link" href="#galeria">Galeria-TBBT</Nav.Link>
                             <NavDropdown className="link" title="Sectores" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#seccion-a">Imagen del día</NavDropdown.Item>
                                 <NavDropdown.Item href="#seccion-b">Fotos de Marte</NavDropdown.Item>
-                                <NavDropdown.Item href="#seccion-c">Video de sonda solar</NavDropdown.Item>
+                                <NavDropdown.Item href="#seccion-c">Video y enlaces</NavDropdown.Item>
+                                <NavDropdown.Item href="#seccion-d">Mis notas</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-                        <Presentacion/>
+                        
                         <Form className="d-flex" action="https://www.google.com/search" method="GET" target="_blank">
                             <Form.Control
                                 type="search"

@@ -27,12 +27,12 @@ const ApodAPI = () => {
         <Row>
             <Col>
                 <img src={imagenDelDia.url} className="d-block w-100" alt={imagenDelDia.title} />
-                <p>Titulo: {imagenDelDia.title}</p>
+                <p><strong>Titulo:</strong> {imagenDelDia.title}</p>
             </Col>
             <Col>
-            <h4>Info de la imagen (temporalmente en ingles):</h4>
+            <p><strong>Info de la imagen</strong> (temporalmente en ingles):</p>
             <p>"{imagenDelDia.explanation}"</p>
-            <h5>(Información tomada de la API de la NASA)</h5>
+            <p><strong>(Información tomada de la API de la NASA)</strong></p>
             </Col>
         </Row>
       </div>

@@ -5,7 +5,20 @@ h1, h2, h2, h4 {
 
 p {
   font-size: calc(35% + 0.8vw);
+  /* min-width: 20em; */
 }
+
+section p {
+  min-width: 20em;
+}
+p strong,
+label{
+  font-size: calc(50% + 0.8vw);
+}
+strong{
+  text-decoration: underline;
+}
+
 /* Estilo para el Header*/
 .header {
   display: flex;
@@ -76,14 +89,15 @@ p {
 
 /* Estilo para el Main*/
 .main {
+  padding-top: 4.5em;
   margin-top: 0%;
-  padding: 10% 1% 1% 1%;
   background-image: url("./img/img_05.jpg");
   background-size: 100% auto;
 }
 
 .texto-presentacion {
   text-shadow: 2px 2px 3px rgb(86, 84, 84);
+  text-align: justify;
   border-radius: 1em;
   background-color: #000000e6;
   color: #fea562;
@@ -94,6 +108,7 @@ p {
   left: 1%;
   width: 98%;
   padding-inline: 1em;
+  line-height: 1;
 }
 
 h1{
@@ -103,6 +118,12 @@ h1{
 h1:hover {
   font-weight: bold;
 }
+
+.notas {
+  color: #f6ee09;
+  font-weight: bold;
+}
+
 
 /* Estilo para el logo de enlace a la API de la NASA*/
 .nasa {
@@ -131,7 +152,7 @@ h1:hover {
 }
 
 .text-container {
-  box-shadow: 0 010px 10px 10px rgba(255, 255, 255, 0.437);
+  box-shadow: 0 10px 10px 10px rgba(255, 255, 255, 0.437);
   border-radius: 10px 0 10px 0;
   padding-left: 3%;
   padding-right: 3%;
@@ -139,14 +160,13 @@ h1:hover {
   font-size: 70%;
 }
 
-
-/* Estilo para el carousel*/
+/* Estilo para las secciones*/
 section {
   color: #fb8e3a !important;
   text-align: center;
   background-color: #00000059;
   padding: 1% 0 1% 0;
-  margin: 1% 0% 0% 0%;
+  margin: 0.3% ;
   border-radius: 0.5em;
 }
 
@@ -155,14 +175,19 @@ h2:hover {
   font-weight: bolder;
 }
 
-
-
+/* Estilo para el carousel*/
 .carousel {
   box-shadow: 10px 20px 40px rgba(245, 239, 239, 0.588);
   border-radius: 1em;
   width: 100%;
-  position: relative;
   z-index: 1;
+}
+
+/* Estilo para la galeria*/
+.galeria {
+  padding-left: calc(10% + 1vw);
+  min-width: 20em;
+  max-width: 90%;
 }
 
 /* Estilo para la tabla*/
@@ -179,6 +204,7 @@ h2:hover {
   align-items: center;
 }
 
+
 /* Estilo para el video*/
 .video-container {
   max-width: 100%;
@@ -189,15 +215,15 @@ h2:hover {
 video {
   width: 100%;
   height: auto;
-  min-width: 10em;
+  min-width: 20em;
+  box-shadow: 5px 10px 20px rgba(245, 239, 239, 0.588);
+  border-radius: .5em !important;
 }
-
-
 
 /* Estilo para el Footer*/
 .footer {
-  margin: 0%;
-  padding: .5%;
+  margin: -1%;
+  padding: 1.5%;
   background-image: url("./img/img_06.jpg");
   background-size: cover;
   background-position: center;
@@ -205,9 +231,9 @@ video {
 
 .footer p {
   line-height: 0.5;
-  color: rgba(219, 221, 88, 0.897);
+  color: #f6ee09;
+  font-weight: bold;
 }
-
 
 /* Estilo para iconos de redes*/
 .icono {
@@ -246,8 +272,10 @@ video {
 .dia-api p{
   font-style: italic;
   font-weight: normal;
+  max-height: max-content;
 }
 .dia-api img {
   border-radius: 1em;
-  box-shadow: 0 010px 10px 10px rgba(255, 255, 255, 0.437);
+  box-shadow: 0 10px 10px 10px rgba(255, 255, 255, 0.437);
+  max-height: calc(70% + 1vw);
 }

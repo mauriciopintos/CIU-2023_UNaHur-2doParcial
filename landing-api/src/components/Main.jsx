@@ -6,6 +6,10 @@ import { useState } from 'react';
 import MarteApi from './MarteApi';
 import ApodAPI from './ApodAPI';
 import LinksAPI from './LinksAPI';
+import Notas from './Notas';
+import Button from 'react-bootstrap/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faNewspaper } from '@fortawesome/free-regular-svg-icons';
 
 
 const Main = () => {
@@ -24,9 +28,17 @@ const Main = () => {
         ]
     );
 
+    // Ocultar y mostrar secciones
+    const [mostrarSeccion, setMostrarSeccion] = useState(false);
+
+    const vistaDeSeccion = () =>{
+        setMostrarSeccion(!mostrarSeccion);
+    };
+
+
     return (
         <Fragment>
-            <div className='main'>
+            <div id="inicio" className='main'>
                 <div className='nasa'>
                     <a href="https://api.nasa.gov/" target="_blank" rel="noreferrer">
                         <img 
@@ -40,31 +52,53 @@ const Main = () => {
                     </div>
                 </div>
 
-                <section>
-                    <h2 id="seccion-a">Imagen Astronómica del Día</h2>
+                <section id="seccion-a">
+                    <h2>Imagen Astronómica del Día</h2>
                     <ApodAPI/>                    
                 </section>
 
-                <section>
-                    <h2 id="seccion-b">Buscador de fotos de Marte</h2>
+                <section id="seccion-b">
+                    <h2>Buscador de fotos de Marte</h2>
                     <MarteApi/>
                 </section>
             
-                <section>
-                    <h2 id="seccion-c">Enlaces de interes</h2>
+                <section id="seccion-c">
+                    <h2>Video y enlaces de interes</h2>
                     <LinksAPI/>
                 </section>
 
-                <section>
-                    <h2 id="galeria">Galeria de imagenes TBBT</h2>
-                    <div className='carousel-main'>
-                        <Carousel showThumbs={true} showStatus={true} selectedItem={0}>
-                            {elementos.map((elemento) => (
-                                <div key={elemento.id}>
-                                    <img src={elemento.src} className="d-block w-100" alt={`Imagen ${elemento.id}`} />
-                                </div>
-                            ))}
-                        </Carousel>
+                <section id="seccion-d">
+                    <h2 onClick={vistaDeSeccion}>
+                        Mi block de notas... <FontAwesomeIcon icon={faNewspaper}/>
+                    </h2>
+                    {
+                        mostrarSeccion && (
+                            <>
+                                <p className='notas'>Aquí podes dejar guardadas tus anotaciones de la página para tenerelas a mano cada vez que ingreses...</p>
+                                <Button
+                                    variant="outline-warning"
+                                    onClick={vistaDeSeccion}
+                                >
+                                    Ocultar notas
+                                </Button>
+                                <Notas/>
+                            </>
+                        )
+                    }
+                </section>
+
+                <section id="galeria">
+                    <h2>Galeria de imagenes TBBT</h2>
+                    <div className='container'>
+                        <div className='galeria'>
+                            <Carousel showThumbs={true} showStatus={true} selectedItem={0}>
+                                {elementos.map((elemento) => (
+                                    <div key={elemento.id}>
+                                        <img src={elemento.src} className="d-block w-100" alt={`Imagen ${elemento.id}`} />
+                                    </div>
+                                ))}
+                            </Carousel>
+                        </div>
                     </div>
                 </section>
             </div>
