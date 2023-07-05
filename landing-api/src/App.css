@@ -1,11 +1,19 @@
+/*////////////////////////////////////////////////////////////////////////*/
 /* Estilos generales*/
+body {
+  line-height: 1;
+  padding-top: 4.5em;
+  margin-top: 0%;
+  background-image: url("./img/img_05.jpg");
+  background-position: top ;
+}
+
 h1, h2, h2, h4 {
   font-size: calc(70% + 1vw);
 }
 
 p {
   font-size: calc(35% + 0.8vw);
-  /* min-width: 20em; */
 }
 
 section p {
@@ -18,6 +26,7 @@ label{
 strong{
   text-decoration: underline;
 }
+
 
 /* Estilo para el Header*/
 .header {
@@ -82,6 +91,7 @@ strong{
   border-color: rgb(237, 186, 97) !important;
   border-width: 2.5px !important;
 }
+
 .navbar-toggler-icon{
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(237, 186, 97)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
@@ -89,15 +99,12 @@ strong{
 
 /* Estilo para el Main*/
 .main {
-  padding-top: 4.5em;
-  margin-top: 0%;
-  background-image: url("./img/img_05.jpg");
-  background-size: 100% auto;
+  max-width: 98%;
+  margin-left: 1%;
 }
 
 .texto-presentacion {
   text-shadow: 2px 2px 3px rgb(86, 84, 84);
-  text-align: justify;
   border-radius: 1em;
   background-color: #000000e6;
   color: #fea562;
@@ -108,7 +115,6 @@ strong{
   left: 1%;
   width: 98%;
   padding-inline: 1em;
-  line-height: 1;
 }
 
 h1{
@@ -124,7 +130,6 @@ h1:hover {
   font-weight: bold;
 }
 
-
 /* Estilo para el logo de enlace a la API de la NASA*/
 .nasa {
   display: flex;
@@ -136,9 +141,10 @@ h1:hover {
   bottom: 0;
   right: 0;
   padding: 1%;
+  margin-right: .5%;
   width: 15%;
   height: auto;
-  max-width: 100%;
+  max-width: 20%;
   min-height: 20px;
 }
 
@@ -160,20 +166,23 @@ h1:hover {
   font-size: 70%;
 }
 
+
 /* Estilo para las secciones*/
 section {
   color: #fb8e3a !important;
   text-align: center;
   background-color: #00000059;
   padding: 1% 0 1% 0;
-  margin: 0.3% ;
+  margin-top: 0.3% ;
   border-radius: 0.5em;
+  min-width: 20em;
 }
 
 h2:hover {
   text-shadow: 5px 3px 4px rgba(255, 253, 253, 0.5);
   font-weight: bolder;
 }
+
 
 /* Estilo para el carousel*/
 .carousel {
@@ -185,10 +194,11 @@ h2:hover {
 
 /* Estilo para la galeria*/
 .galeria {
-  padding-left: calc(10% + 1vw);
+  /* padding-left: calc(10% + 1vw); */
   min-width: 20em;
   max-width: 90%;
 }
+
 
 /* Estilo para la tabla*/
 .table-container th {
@@ -215,15 +225,13 @@ h2:hover {
 video {
   width: 100%;
   height: auto;
-  min-width: 20em;
-  box-shadow: 5px 10px 20px rgba(245, 239, 239, 0.588);
-  border-radius: .5em !important;
+  min-width: 10em;
 }
 
 /* Estilo para el Footer*/
 .footer {
-  margin: -1%;
-  padding: 1.5%;
+  margin: 0%;
+  padding: .5%;
   background-image: url("./img/img_06.jpg");
   background-size: cover;
   background-position: center;
@@ -231,8 +239,7 @@ video {
 
 .footer p {
   line-height: 0.5;
-  color: #f6ee09;
-  font-weight: bold;
+  color: rgba(219, 221, 88, 0.897);
 }
 
 /* Estilo para iconos de redes*/
@@ -247,7 +254,6 @@ video {
   color: #e9e197;
   transform: scale(1.7);
 }
-
 
 
 /*** ESTILOS PARA LOS COMPONENTES DE LA API ***/
@@ -267,6 +273,7 @@ video {
 /* Estilo para la imagen del día*/
 .dia-api {
   text-align: justify;
+  /* min-width: 20em; */
 }
 
 .dia-api p{
@@ -278,4 +285,5 @@ video {
   border-radius: 1em;
   box-shadow: 0 10px 10px 10px rgba(255, 255, 255, 0.437);
   max-height: calc(70% + 1vw);
+  /* min-width: 20em; */
 }
